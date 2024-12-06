@@ -1,5 +1,5 @@
 "use client";
-import { delay, motion } from "motion/react";
+import { motion } from "motion/react";
 
 const skillsData = [
   {
@@ -61,17 +61,19 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.07 * index,
+      delay: 0.03 * index,
     },
   }),
 };
 
 function Skills() {
   return (
-    <div className=" grid place-content-center py-[100px]">
+    <div className="grid place-content-center py-[150px]">
       <div>
-        <h2 className="text-center capitalize text-3xl font-bold">my skills</h2>
-        <ul className="mt-10 flex flex-wrap gap-3 items-center justify-center max-w-[900px]">
+        <h2 className="text-left md:text-center capitalize text-3xl md:text-5xl font-bold">
+          my skills
+        </h2>
+        <ul className="mt-7 md:mt-10 flex flex-wrap gap-3 items-center justify-start md:justify-center max-w-[900px]">
           {skillsData.map((skill, index) => (
             <motion.li
               variants={fadeInAnimationVariants}
@@ -80,9 +82,10 @@ function Skills() {
               viewport={{
                 once: true,
               }}
+              // Custom data to use to resolve dynamic variants differently for each animating component
               custom={index}
               key={skill.id}
-              className=" bg-slate-50 text-zinc-950 px-[40px] py-[10px] rounded-lg"
+              className="bg-slate-50 text-zinc-950 px-[40px] py-[10px] rounded-[10px]"
             >
               {skill.skillName}
             </motion.li>
