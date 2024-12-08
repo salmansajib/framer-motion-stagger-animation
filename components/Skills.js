@@ -85,7 +85,7 @@ function Skills() {
               // Custom data to use to resolve dynamic variants differently for each animating component
               custom={index}
               key={skill.id}
-              className="bg-slate-50 text-zinc-950 px-[40px] py-[10px] rounded-[10px]"
+              className="bg-zinc-600/50 text-slate-90 px-[40px] py-[10px] rounded-[10px]"
             >
               {skill.skillName}
             </motion.li>
