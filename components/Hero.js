@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "motion/react";
-import ScrollDown from "./ScrollDown";
+import ScrollDownArrow from "./ScrollDownArrow";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -61,7 +61,7 @@ function Hero() {
       </motion.div>
 
       <div className="absolute bottom-[10px] left-1/2 -translate-x-1/2">
-        <ScrollDown />
+        <ScrollDownArrow />
       </div>
     </motion.div>
   );

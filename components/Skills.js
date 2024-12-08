@@ -70,7 +70,7 @@ function Skills() {
   return (
     <div className="grid place-content-center py-[150px]">
       <div>
-        <h2 className="text-left md:text-center capitalize text-3xl md:text-5xl font-bold">
+        <h2 className="text-left md:text-center capitalize text-3xl md:text-5xl lg:text-7xl font-bold">
           my skills
         </h2>
         <ul className="mt-7 md:mt-10 flex flex-wrap gap-3 items-center justify-start md:justify-center max-w-[900px]">
