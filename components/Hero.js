@@ -1,5 +1,5 @@
 "use client";
-import { clamp, motion } from "motion/react";
+import { motion } from "motion/react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -28,6 +28,7 @@ const groupVariants = {
   visible: {
     transition: {
       staggerChildren: 0.2,
+      delayChildren: 1,
     },
   },
 };
@@ -42,7 +43,7 @@ const pathVariants = {
     y: 0,
     scale: 1.1,
     transition: {
-      duration: 0.8,
+      duration: 1,
       repeat: Infinity,
       repeatType: "reverse",
     },
@@ -92,7 +93,7 @@ function Hero() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
-          height="50"
+          height="45"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
